@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:dominguezrutas/pagina_inicial.dart';
-import 'package:dominguezrutas/pagina_dos.dart';
-import 'package:dominguezrutas/pagina_tres.dart';
-import 'package:dominguezrutas/pagina_cuatro.dart';
-import 'package:dominguezrutas/pagina_cinco.dart';
-import 'package:dominguezrutas/pagina_seis.dart';
+import 'package:dominguezrutas/pagina_imageAsset.dart';
+import 'package:dominguezrutas/pagina_SilverAppBar.dart';
+import 'package:dominguezrutas/pagina_RichText.dart';
+import 'package:dominguezrutas/pagina_Slider.dart';
+import 'package:dominguezrutas/pagina_FloatingActionButton.dart';
+import 'package:dominguezrutas/pagina_RotatedBox.dart';
+import 'package:dominguezrutas/pagina_ClipRect.dart';
+import 'package:dominguezrutas/pagina_Placeholder.dart';
 
 void main() => runApp(MiRutas());
 
@@ -14,6 +17,7 @@ class MiRutas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Rutas entre paginas',
         initialRoute: '/',
         routes: {
@@ -22,7 +26,10 @@ class MiRutas extends StatelessWidget {
           '/pantalla3': (context) => const PantallaTres(),
           '/pantalla4': (context) => const PantallaCuatro(),
           '/pantalla5': (context) => const PantallaCinco(),
-          '/pantalla6': (context) => const PantallaSeis()
+          '/pantalla6': (context) => const PantallaSeis(),
+          '/pantalla7': (context) => const PantallaSiete(),
+          '/pantalla8': (context) => const PantallaOcho(),
+          '/pantalla9': (context) => const PantallaNueve(),
         });
   }
 }
